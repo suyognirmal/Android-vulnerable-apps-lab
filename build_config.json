@@ -1,0 +1,73 @@
+{
+  "env_docs": {
+    "ANDROID_SDK_ROOT": "Path to the Android SDK (ANDROID_HOME is also accepted)",
+    "FLUTTER": "Path to the flutter executable (falls back to flutter on PATH)",
+    "JAVA_HOME": "JDK used for Gradle builds (falls back to javac on PATH)",
+    "BUILD_TMP": "Scratch directory for git clones and builds (defaults to system temp)"
+  },
+  "builds": [
+    {
+      "id": "vulnlab",
+      "framework": "native-java",
+      "folder": "VulnLab",
+      "dest_artifact": "VulnLab.apk",
+      "description": "Comprehensive OWASP Mobile Top 10 lab covering IPC, WebView RCE, and dynamic code loading.",
+      "upstream_repo": "https://github.com/anpa1200/Vulnerable-APK",
+      "clone_url": "https://github.com/anpa1200/Vulnerable-APK.git",
+      "requires": ["java", "android_sdk"],
+      "recipe": "shell",
+      "commands": ["bash build.sh"],
+      "output_in_clone": "VulnLab.apk"
+    },
+    {
+      "id": "hackdoor",
+      "framework": "jetpack-compose",
+      "folder": "HackDoor",
+      "dest_artifact": "HackDoor-Compose.apk",
+      "description": "Jetpack Compose forum app with OWASP Mobile Top 10 modules and optional Flask backend.",
+      "upstream_repo": "https://github.com/macik09/Vulnforum",
+      "clone_url": "https://github.com/macik09/Vulnforum.git",
+      "requires": [],
+      "recipe": "copy_prebuilt",
+      "output_in_clone": "VulnForum.apk"
+    },
+    {
+      "id": "vulnbanklab",
+      "framework": "jetpack-compose",
+      "folder": "VulnBankLab",
+      "dest_artifact": "VulnBankLab-Compose.apk",
+      "description": "Compose banking demo with exported activities, deep-link auth bypass, and hardcoded credentials.",
+      "upstream_repo": "https://github.com/deemoun/Vulnerable-Bank-App-Demo",
+      "clone_url": "https://github.com/deemoun/Vulnerable-Bank-App-Demo.git",
+      "requires": ["java", "android_sdk"],
+      "recipe": "gradle_debug",
+      "commands": ["chmod +x gradlew", "./gradlew assembleDebug --no-daemon -q"],
+      "output_in_clone": "app/build/outputs/apk/debug/app-debug.apk"
+    },
+    {
+      "id": "vulnapp",
+      "framework": "flutter",
+      "folder": "VulnApp",
+      "dest_artifact": "VulnApp.apk",
+      "description": "Beginner Flutter lab with hardcoded credentials, plain HTTP, and SharedPreferences tokens.",
+      "upstream_repo": "https://github.com/chaseman447/VulnApp",
+      "clone_url": "https://github.com/chaseman447/VulnApp.git",
+      "requires": ["flutter"],
+      "recipe": "flutter_release",
+      "output_in_clone": "build/app/outputs/flutter-apk/app-release.apk"
+    },
+    {
+      "id": "securebank",
+      "framework": "flutter",
+      "folder": "SecureBank-Starter",
+      "dest_artifact": "SecureBank-Starter.apk",
+      "description": "FortKnox vulnerable banking starter — drift/SQLite, deep links, and intentional OWASP flaws.",
+      "upstream_repo": "https://github.com/team360r/SecureBank",
+      "clone_url": "https://github.com/team360r/SecureBank.git",
+      "branch": "chapter-0-threat-briefing",
+      "requires": ["flutter"],
+      "recipe": "flutter_securebank",
+      "output_in_clone": "build/app/outputs/flutter-apk/app-release.apk"
+    }
+  ]
+}

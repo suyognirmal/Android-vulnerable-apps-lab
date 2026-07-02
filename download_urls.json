@@ -1,0 +1,156 @@
+{
+  "apps": [
+    {
+      "framework": "native-java",
+      "folder": "DIVA",
+      "artifact": "diva-beta.apk",
+      "url": "https://github.com/Decentralized3/Vuln-app-for-Android-pentesting/raw/main/diva-beta.apk",
+      "upstream_repo": "https://github.com/payatu/diva-android",
+      "description": "Classic 13-challenge insecure app covering storage, IPC, and native code."
+    },
+    {
+      "framework": "native-java",
+      "folder": "Sieve",
+      "artifact": "sieve.apk",
+      "url": "https://github.com/mwrlabs/drozer/releases/download/2.3.4/sieve.apk",
+      "upstream_repo": "https://github.com/WithSecureLabs/drozer",
+      "description": "Password manager lab app bundled with Drozer for IPC and content-provider testing."
+    },
+    {
+      "framework": "native-java",
+      "folder": "InsecureBankv2",
+      "artifact": "InsecureBankv2.apk",
+      "url": "https://github.com/dineshshetty/Android-InsecureBankv2/releases/download/2.3.1/InsecureBankv2.apk",
+      "upstream_repo": "https://github.com/dineshshetty/Android-InsecureBankv2",
+      "description": "Vulnerable banking app with weak crypto, exported components, and API flaws."
+    },
+    {
+      "framework": "native-java",
+      "folder": "MSTG-Java",
+      "artifact": "MSTG-Android-Java.apk",
+      "url": "https://github.com/OWASP/MASTG-Hacking-Playground/releases/download/1.1/MSTG-Android-Java.apk",
+      "upstream_repo": "https://github.com/OWASP/MASTG-Hacking-Playground",
+      "description": "OWASP MASTG hacking playground — Java edition mapped to official test cases."
+    },
+    {
+      "framework": "native-kotlin",
+      "folder": "MSTG-Kotlin",
+      "artifact": "MSTG-Android-Kotlin.apk",
+      "url": "https://github.com/OWASP/MASTG-Hacking-Playground/releases/download/1.0/MSTG-Android-Kotlin.apk",
+      "upstream_repo": "https://github.com/OWASP/MASTG-Hacking-Playground",
+      "description": "OWASP MASTG hacking playground — Kotlin edition with optional Rails backend."
+    },
+    {
+      "framework": "native-java",
+      "folder": "Damn-Vulnerable-Bank",
+      "artifact": "dvba_v1.1.0.apk",
+      "url": "https://github.com/rewanthtammana/Damn-Vulnerable-Bank/releases/download/v1.1.0/dvba_v1.1.0.apk",
+      "upstream_repo": "https://github.com/rewanthtammana/Damn-Vulnerable-Bank",
+      "description": "Modern vulnerable banking app with root detection, pinning, and API abuse scenarios."
+    },
+    {
+      "framework": "native-kotlin",
+      "folder": "InsecureShop",
+      "artifact": "InsecureShop.apk",
+      "url": "https://github.com/optiv/InsecureShop/releases/download/v1.0/InsecureShop.apk",
+      "upstream_repo": "https://github.com/optiv/InsecureShop",
+      "description": "Kotlin e-commerce lab with deep links, WebView SSL issues, and intent redirection."
+    },
+    {
+      "framework": "native-java",
+      "folder": "Vuldroid",
+      "artifact": "Vuldroid.apk",
+      "url": "https://github.com/jaiswalakshansh/Vuldroid/releases/download/v1.1/Vuldroid.apk",
+      "upstream_repo": "https://github.com/jaiswalakshansh/Vuldroid",
+      "description": "Modular vulnerable app with WebView file theft and component exposure challenges."
+    },
+    {
+      "framework": "native-kotlin",
+      "folder": "AndroGoat",
+      "artifact": "AndroGoat.apk",
+      "url": "https://github.com/satishpatnayak/AndroGoat/releases/download/v2.0.1/AndroGoat.apk",
+      "upstream_repo": "https://github.com/satishpatnayak/AndroGoat",
+      "description": "OWASP-aligned Kotlin app with 25 vulnerability modules across storage and WebView."
+    },
+    {
+      "framework": "react-native",
+      "folder": "VulnBank-RN",
+      "artifact": "vulnbank3.apk",
+      "url": "https://github.com/Commando-X/vuln-bank-mobile/releases/download/v1.3/vulnbank3.apk",
+      "upstream_repo": "https://github.com/Commando-X/vuln-bank-mobile",
+      "description": "React Native banking app with hardcoded JWT and API keys in the JS bundle."
+    },
+    {
+      "framework": "react-native",
+      "folder": "VulnerableRN",
+      "artifact": "VulnerableRN.apk",
+      "url": "https://github.com/banditVedant/React-Native-CTF/releases/download/reactnative/VulnerableRN.apk",
+      "upstream_repo": "https://github.com/banditVedant/React-Native-CTF",
+      "description": "Payatu CTF app with a plain Metro JS bundle (no Hermes) for bundle RE practice."
+    },
+    {
+      "framework": "react-native",
+      "folder": "RNHermes-CTF",
+      "artifact": "RNHermesCTF.apk",
+      "url": "https://github.com/banditVedant/React-Native-CTF/releases/download/reactnative/RNHermesCTF.apk",
+      "upstream_repo": "https://github.com/banditVedant/React-Native-CTF",
+      "description": "Payatu CTF sibling app compiled with Hermes bytecode for RN Hermes analysis."
+    },
+    {
+      "framework": "react-native",
+      "folder": "DemoSecret",
+      "artifact": "DemoSecret.apk",
+      "url": "https://github.com/Incognito-Lab/DemoSecret-Mobile-App/releases/download/v1.0.0/DemoSecret.apk",
+      "upstream_repo": "https://github.com/Incognito-Lab/DemoSecret-Mobile-App",
+      "description": "Modern Expo + Hermes app with hardcoded demo secrets in the bundle."
+    },
+    {
+      "framework": "flutter",
+      "folder": "DVFA",
+      "artifact": "DVFA.apk",
+      "url": "https://github.com/Schmiemandev/dvfa/releases/download/1.0.0/app-release.apk",
+      "upstream_repo": "https://github.com/Schmiemandev/dvfa",
+      "description": "OWASP FinTech Flutter lab with ten client-side challenges and optional mock backend."
+    },
+    {
+      "framework": "flutter",
+      "folder": "Ostorlab-Insecure",
+      "artifact": "ostorlab_insecure_app.apk",
+      "url": "https://github.com/Ostorlab/ostorlab_insecure_android_app/releases/download/v1.7/ostorlab_insecure_app.apk",
+      "upstream_repo": "https://github.com/Ostorlab/ostorlab_insecure_android_app",
+      "description": "Hybrid Java + Flutter scanner benchmark with 19+ vulnerability classes."
+    },
+    {
+      "framework": "native-java",
+      "folder": "UnCrackable-L1",
+      "artifact": "UnCrackable-Level1.apk",
+      "url": "https://github.com/OWASP/mastg/raw/master/Crackmes/Android/Level_01/UnCrackable-Level1.apk",
+      "upstream_repo": "https://github.com/OWASP/mastg",
+      "description": "OWASP MASTG crackme L1 — root detection bypass and native string extraction."
+    },
+    {
+      "framework": "native-java",
+      "folder": "UnCrackable-L2",
+      "artifact": "UnCrackable-Level2.apk",
+      "url": "https://github.com/OWASP/mastg/raw/master/Crackmes/Android/Level_02/UnCrackable-Level2.apk",
+      "upstream_repo": "https://github.com/OWASP/mastg",
+      "description": "OWASP MASTG crackme L2 — tamper detection and runtime decryption."
+    },
+    {
+      "framework": "native-java",
+      "folder": "UnCrackable-L3",
+      "artifact": "UnCrackable-Level3.apk",
+      "url": "https://github.com/OWASP/mastg/raw/master/Crackmes/Android/Level_03/UnCrackable-Level3.apk",
+      "upstream_repo": "https://github.com/OWASP/mastg",
+      "description": "OWASP MASTG crackme L3 — white-box crypto and obfuscated native code."
+    },
+    {
+      "framework": "native-java",
+      "folder": "UnCrackable-L4",
+      "artifact": "r2pay-v0.9.apk",
+      "url": "https://github.com/OWASP/mastg/raw/master/Crackmes/Android/Level_04/r2pay-v0.9.apk",
+      "upstream_repo": "https://github.com/OWASP/mastg",
+      "description": "OWASP MASTG crackme L4 (r2Pay) — multi-layer native protection and white-box AES."
+    }
+  ]
+}
